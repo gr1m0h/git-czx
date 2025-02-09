@@ -1,6 +1,8 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-# git-cz
+# git-czx
+
+This tool is [git-cz](https://github.com/streamich/git-cz)'s fork project.
 
 ![image](https://user-images.githubusercontent.com/9773803/49760520-fa6c6f00-fcc4-11e8-84c4-80727f071487.png)
 
@@ -63,6 +65,13 @@ git cz
 
 You can provide a custom configuration in a `changelog.config.js` file in your repo, or in any parent folder.
 git-cz will search for the closest config file.
+
+Alternatively, if you want complete freedom over the file’s location and name, you can specify the file path via the $GIT_CZX_CONFIG environment variable. For example:
+
+```sh
+export GIT_CZX_CONFIG=./config/my-custom-config.js
+```
+
 Below is default config:
 
 ```js
